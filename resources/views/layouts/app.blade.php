@@ -14,7 +14,10 @@
 </head>
 <body>
 
+    @include('inc.topbar')
+
     <div class="container">
+         @include('inc.messages')
         @yield('content')
     </div>
 
