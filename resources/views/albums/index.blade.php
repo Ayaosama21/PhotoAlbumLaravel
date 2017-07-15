@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <h1>Albums</h1>
+    <h1 class="center-align">Фотоальбом</h1>
 
   @if(count($albums) > 0)
     <?php
@@ -16,14 +16,14 @@
                 @if($i == $colcount)
                     <div class='col s4'>
                     <a href="/albums/{{$album->id}}">
-                        <img class="z-depth-3" src="storage/album_covers/{{$album->cover_image}}" alt="{{$album->name}}">
+                        <img style="width:200px; height: 200px" class="hoverable" src="storage/album_covers/{{$album->cover_image}}" alt="{{$album->name}}">
                         </a>
                     <br>
                     <h5>{{$album->name}}</h5>
                 @else
                     <div class='col s4'>
                     <a href="/albums/{{$album->id}}">
-                        <img class="z-depth-3" src="storage/album_covers/{{$album->cover_image}}" alt="{{$album->name}}">
+                        <img style="width:200px;height: 200px" class="hoverable" src="storage/album_covers/{{$album->cover_image}}" alt="{{$album->name}}">
                     </a>
                     <br>
                     <h5>{{$album->name}}</h5>
@@ -39,7 +39,7 @@
       </div>
     </div>
   @else
-    <p>No Albums To Display</p>
+    <p class="card-panel blue lighten-5">No Albums To Display</p>
   @endif
 
 @endsection
