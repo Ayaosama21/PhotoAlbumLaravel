@@ -39,7 +39,7 @@
       </div>
     </div>
   @else
-    <p class="card-panel blue lighten-5">No Albums To Display</p>
+    <p class="card-panel blue lighten-5">Добавьте свой альбом</p>
   @endif
 
 @endsection
