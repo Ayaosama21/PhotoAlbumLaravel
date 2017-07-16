@@ -26,14 +26,14 @@
                 @if($i == $colcount)
                     <div class='col s4'>
                     <a href="/photos/{{$photo->id}}">
-                        <img style="width:200px; height: 200px" class="hoverable" src="/storage/photos/{{$photo->album_id}}/{{$photo->photo}}" alt="{{$photo->title}}">
+                        <img style="width:200px; height: 150px" class="hoverable" src="/storage/photos/{{$photo->album_id}}/{{$photo->photo}}" alt="{{$photo->title}}">
                         </a>
                     <br>
                     <h5>{{$photo->title}}</h5>
                 @else
                    <div class='col s4'>
                     <a href="/photos/{{$photo->id}}">
-                        <img style="width:200px; height: 200px" class="hoverable" src="/storage/photos/{{$photo->album_id}}/{{$photo->photo}}" alt="{{$photo->title}}">
+                        <img style="width:200px; height: 150px" class="hoverable" src="/storage/photos/{{$photo->album_id}}/{{$photo->photo}}" alt="{{$photo->title}}">
                         </a>
                     <br>
                     <h5>{{$photo->title}}</h5>
